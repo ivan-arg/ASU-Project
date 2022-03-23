@@ -1,0 +1,10 @@
+/var/log/auth.log { 
+	missingok
+	rotate 7
+	weekly
+	compresscmd gzip(1)
+	delaycompress
+	notifempty
+	create
+}
+
